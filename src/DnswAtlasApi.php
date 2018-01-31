@@ -2,7 +2,6 @@
 
 namespace Drupal\dnsw_atlas;
 
-use Drupal\Core\Mail\MailManagerInterface;
 use GuzzleHttp\Client;
 use Masterminds\HTML5\Exception;
 use GuzzleHttp\Exception\RequestException;
@@ -24,14 +23,11 @@ class DnswAtlasApi {
    *
    * @param \GuzzleHttp\Client $client
    *   Guzzle client.
-   * @param \Drupal\Core\Mail\MailManagerInterface $mail
-   *   Mail client.
    * @param string $baseUrl
    *   Atlas API base url.
    */
-  public function __construct(Client $client, MailManagerInterface $mail, $baseUrl) {
+  public function __construct(Client $client, $baseUrl) {
     $this->client = $client;
-    $this->mail = $mail;
     $this->baseUrl = $baseUrl;
   }
 
