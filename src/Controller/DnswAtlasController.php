@@ -74,7 +74,7 @@ class DnswAtlasController extends ControllerBase {
     $results = $this->dnswAtlasApi->request('get', $query);
 
     // Initialise pager.
-    pager_default_initialize($results['body']['numberOfResults'], 10);
+    pager_default_initialize($results['body']['numberOfResults'], $query['size']);
 
     $build = [];
     $build[]['form'] = $form = \Drupal::formBuilder()->getForm('Drupal\dnsw_atlas\Form\DnswAtlasForm');
