@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Contains dnsw_atlas.module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function dnsw_atlas_theme() {
+  return [
+    'dnsw_atlas' => [
+      'variables' => ['results' => FALSE],
+    ],
+  ];
+}

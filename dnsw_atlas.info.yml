@@ -1,0 +1,5 @@
+name: 'DNSW Atlas'
+type: module
+description: 'Destination NSW Technical Assessment'
+core: 8.x
+package: 'Custom'

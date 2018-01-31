@@ -1,0 +1,6 @@
+parameters:
+  dnsw_atlas_api.atlas_base_url: 'http://atlas.atdw-online.com.au/api/atlas/products'
+services:
+  dnsw_atlas.api:
+    class: Drupal\dnsw_atlas\DnswAtlasApi
+    arguments: ['@http_client', '@plugin.manager.mail', '%dnsw_atlas_api.atlas_base_url%']

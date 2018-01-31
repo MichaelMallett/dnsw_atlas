@@ -1,0 +1,22 @@
+dnsw_atlas.dnsw_atlas_form:
+  path: '/dnsw_atlas/form'
+  defaults:
+    _form: '\Drupal\dnsw_atlas\Form\DnswAtlasForm'
+    _title: 'DnswAtlasForm'
+  requirements:
+    _access: 'TRUE'
+dnsw_atlas.dnsw_atlas_settings_form:
+  path: '/admin/dnsw_atlas/settings'
+  defaults:
+    _form: '\Drupal\dnsw_atlas\Form\DnswAtlasSettings'
+    _title: 'DNSW Atlas Settings Form'
+  requirements:
+    _permission: 'administer site configuration'
+
+dnsw_atlas.dnsw_atlas_controller:
+  path: '/dnsw_atlas'
+  defaults:
+    _controller: '\Drupal\dnsw_atlas\Controller\DnswAtlasController::displayResults'
+    _title: 'DNSW Atlas Results'
+  requirements:
+    _permission: 'access content'

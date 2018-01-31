@@ -1,0 +1,14 @@
+{
+  "name": "drupal/dnsw_atlas",
+  "type": "drupal-module",
+  "description": "Destination NSW Technical Assessment",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/dnsw_atlas",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/dnsw_atlas",
+    "source": "http://cgit.drupalcode.org/dnsw_atlas"
+  },
+  "require": { }
+}

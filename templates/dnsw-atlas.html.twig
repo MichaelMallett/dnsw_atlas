@@ -1,0 +1,14 @@
+{%  if results == false or results['numberOfResults'] == 0 %}
+Apologies, but there are no results for this region.
+{% else %}
+    <p>{{ results['numberOfResults'] }} results</p>
+    {% for result in results['products'] %}
+        <div>
+            <h2>{{ result['productName'] }}</h2>
+            <img src="{{ result['productImage'] }}" title="{{ result['productName'] }}" alt="{{ result['productName'] }}" />
+            <h3>{{ result['addresses'][0]['city'] }}</h3>
+            <p>{{ result['productDescription'] }}</p>
+        </div>
+    {%  endfor %}
+{% endif %}
+
